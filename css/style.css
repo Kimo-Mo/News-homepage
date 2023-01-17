@@ -58,12 +58,26 @@ body {
 }
 .menu:hover .mobile {
   display: block;
+  right: -25px;
+  box-shadow: -390px -200px 0 200px rgb(0 0 0 / 26%);
+  animation: move  .3s linear ;
+  -webkit-animation: move  .3s linear ;
+}
+@keyframes move {
+  0% {
+    right: -300px;
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 26%);
+  }
+  100% {
+    right: -25px;
+    box-shadow: -390px -200px 0 200px rgb(0 0 0 / 26%);
+  }
 }
 .mobile {
   display: none;
   position: absolute;
   top: -50px;
-  right: -25px;
+  right: -300px;
   background-color: var(--Off-white);
   width: 290px;
   height: 844px;
