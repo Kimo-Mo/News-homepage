@@ -20,12 +20,15 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
   background-color: var(--Off-white);
+  overflow-x: hidden;
+  position: relative;
 }
 .container {
   display: grid;
@@ -60,8 +63,8 @@ body {
   display: block;
   right: -25px;
   box-shadow: -390px -200px 0 200px rgb(0 0 0 / 26%);
-  animation: move  .3s linear ;
-  -webkit-animation: move  .3s linear ;
+  animation: move  .1s linear ;
+  -webkit-animation: move  .1s linear ;
 }
 @keyframes move {
   0% {
