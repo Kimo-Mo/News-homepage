@@ -207,7 +207,6 @@ h1 {
 @media (width < 769px) {
   .container {
     grid-template-columns: minmax(auto, 1fr);
-    /* grid-template-rows: repeat(9, minmax(auto, auto)); */
     gap: 20px 0;
   }
   .menu {
