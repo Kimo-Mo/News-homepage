@@ -8,45 +8,46 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+      href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <title>News homepage</title>
   </head>
   <body>
     <div class="container">
-      <div class="menu">
-        <img src="./images/icon-menu.svg" alt="" />
-        <div class="mobile">
-          <img src="./images/icon-menu-close.svg" alt="" />
-          <ul class="mobile-list">
-            <li>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
-          </ul>
-        </div>
-      </div>
-      <div class="header">
+      <header class="header">
         <div class="logo">
           <img src="images/logo.svg" alt="" />
         </div>
         <ul class="main-list">
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+          <li class="close__menu">
+            <img src="images/icon-menu-close.svg" alt="close icon" />
+          </li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
+          <li>
+            <a href="#">Categories</a>
+          </li>
         </ul>
-      </div>
+        <div class="menu__icon">
+          <img src="images/icon-menu.svg" alt="menu icon" />
+        </div>
+      </header>
       <div class="web-image"></div>
       <div class="heading">
         <h1>The Bright Future of Web 3.0?</h1>
@@ -59,7 +60,7 @@
         </p>
         <button>Read more</button>
       </div>
-      <div class="new">
+      <aside class="new">
         <h2>New</h2>
         <div>
           <h4>Hydrogen VS Electric Cars</h4>
@@ -81,7 +82,7 @@
             that means.
           </p>
         </div>
-      </div>
+      </aside>
       <div class="card card-one">
         <img src="images/image-retro-pcs.jpg" alt="" />
         <div>
@@ -107,5 +108,6 @@
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
